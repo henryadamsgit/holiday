@@ -12,7 +12,6 @@ db.once("open", (error) => console.log("Connected to Database"));
 app.use(express.json());
 
 const holidayRouter = require("./routes/holidays");
-app.use('/holidays', holidayRouter)
-
+app.use("/holidays", holidayRouter);
 
 app.listen(3000, () => console.log("Server started"));
