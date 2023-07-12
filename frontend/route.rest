@@ -1,12 +1,17 @@
+//GET ALL
+
 GET http://localhost:3000/holidays
 
 ###
 
-GET http://localhost:3000/holidays/12
+// GET BY ID
+
+GET http://localhost:3000/holidays/64aebbdec467330a100db369
 
 ###
 
 
+// CREATE
 POST http://localhost:3000/holidays
 Content-Type: application/json
 
@@ -15,4 +20,19 @@ Content-Type: application/json
     "destination": "Kyoto",
     "arrivalDate": "2023-01-25",
     "departureDate": "2023-02-18"
+}
+
+###
+
+// DELETE
+
+DELETE http://localhost:3000/holidays/64aebbdec467330a100db369
+
+###
+
+PUT http://localhost:3000/holidays/64aeccf61cdaaf1c66250f14
+Content-Type: application/json
+
+{
+    "destination": "Tokyo"
 }
