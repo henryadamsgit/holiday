@@ -6,7 +6,7 @@ GET http://localhost:3000/holidays
 
 // GET BY ID
 
-GET http://localhost:3000/holidays/64aebbdec467330a100db369
+GET http://localhost:3000/holidays/64aed500f89128711f45bb1b
 
 ###
 
